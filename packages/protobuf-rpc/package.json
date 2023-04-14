@@ -10,8 +10,7 @@
   "main": "src/index.ts",
   "files": [
     "proto",
-    "dist",
-    "gen"
+    "dist"
   ],
   "scripts": {
     "build": "yarn library build",
