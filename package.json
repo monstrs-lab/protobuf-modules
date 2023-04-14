@@ -1,0 +1,25 @@
+{
+  "name": "protobuf-modules",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "@types/estree": "1.0.0"
+  },
+  "devDependencies": {
+    "@monstrs/code-runtime": "^0.1.2",
+    "@types/node": "^18.15.11",
+    "husky": "8.0.3",
+    "typescript": "^5.0.4"
+  },
+  "packageManager": "yarn@3.5.0",
+  "tools": {
+    "schematic": {
+      "collection": "@monstrs/schematics",
+      "schematic": "project",
+      "type": "libraries",
+      "migration": "1643131477515"
+    }
+  }
+}
