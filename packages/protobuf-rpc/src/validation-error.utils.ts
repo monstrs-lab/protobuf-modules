@@ -7,9 +7,11 @@ export interface MaybeConnectError {
   }>
 }
 
-export const findValidationErrorDetails = (error: MaybeConnectError): Array<ValidationError> => {
-  if (Array.isArray(error?.details)) {
-    return error.details
+export const findValidationErrorDetails = (error: unknown): Array<ValidationError> => {
+  const { details } = (error || {}) as MaybeConnectError
+
+  if (Array.isArray(details)) {
+    return details
       .filter((detail) => detail.type === ValidationError.typeName)
       .map((detail) => ValidationError.fromBinary(detail.value))
   }
