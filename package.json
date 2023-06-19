@@ -8,7 +8,7 @@
     "@types/estree": "1.0.0"
   },
   "devDependencies": {
-    "@monstrs/tools-runtime": "^0.2.7",
+    "@monstrs/tools-runtime": "^0.2.8",
     "@types/node": "^18.15.11",
     "typescript": "^5.1.3"
   },
