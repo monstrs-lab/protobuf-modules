@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext", "dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -11,8 +18,8 @@
     "moduleResolution": "nodenext",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "noImplicitThis": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "pretty": true,
@@ -26,5 +33,8 @@
     "jsx": "react",
     "outDir": "./dist"
   },
-  "include": ["project.types.d.ts", "packages/**/*"]
+  "include": [
+    "project.types.d.ts",
+    "packages/**/*"
+  ]
 }
