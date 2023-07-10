@@ -31,7 +31,8 @@
     "module": "nodenext",
     "target": "es2021",
     "jsx": "react",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "noImplicitOverride": true
   },
   "include": [
     "project.types.d.ts",
