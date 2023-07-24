@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/protoc-gen-interfaces",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "bin": "bin/protoc-gen-interfaces",
   "files": [

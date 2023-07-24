@@ -1,6 +1,6 @@
 {
   "name": "@monstrs/protoc-gen-abstractions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "bin": "bin/protoc-gen-abstractions",
   "files": [
