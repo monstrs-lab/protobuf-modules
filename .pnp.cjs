@@ -16,12 +16,17 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "@monstrs/protobuf-rpc",\
       "reference": "workspace:packages/protobuf-rpc"\
+    },\
+    {\
+      "name": "@monstrs/protoc-gen-interfaces",\
+      "reference": "workspace:packages/protoc-gen-interfaces"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@monstrs/protobuf-rpc", ["workspace:packages/protobuf-rpc"]],\
+    ["@monstrs/protoc-gen-interfaces", ["workspace:packages/protoc-gen-interfaces"]],\
     ["protobuf-modules", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -1138,6 +1143,13 @@ const RAW_RUNTIME_STATE =
           ["@bufbuild/protobuf", "npm:1.2.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:1.3.0", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-protobuf-npm-1.3.0-da600c7f9c-c1a5fdec23.zip/node_modules/@bufbuild/protobuf/",\
+        "packageDependencies": [\
+          ["@bufbuild/protobuf", "npm:1.3.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/protoc-gen-connect-es", [\
@@ -1197,6 +1209,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@bufbuild/protoplugin", "npm:1.2.0"],\
           ["@bufbuild/protobuf", "npm:1.2.0"],\
+          ["@typescript/vfs", "npm:1.4.0"],\
+          ["typescript", "patch:typescript@npm%3A4.5.2#optional!builtin<compat/typescript>::version=4.5.2&hash=bcec9a"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.3.0", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-protoplugin-npm-1.3.0-80665a77c5-cf5b4fe12b.zip/node_modules/@bufbuild/protoplugin/",\
+        "packageDependencies": [\
+          ["@bufbuild/protoplugin", "npm:1.3.0"],\
+          ["@bufbuild/protobuf", "npm:1.3.0"],\
           ["@typescript/vfs", "npm:1.4.0"],\
           ["typescript", "patch:typescript@npm%3A4.5.2#optional!builtin<compat/typescript>::version=4.5.2&hash=bcec9a"]\
         ],\
@@ -1830,6 +1852,17 @@ const RAW_RUNTIME_STATE =
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@bufbuild/protoc-gen-connect-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:0.8.6"],\
           ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@monstrs/protoc-gen-interfaces", [\
+      ["workspace:packages/protoc-gen-interfaces", {\
+        "packageLocation": "./packages/protoc-gen-interfaces/",\
+        "packageDependencies": [\
+          ["@monstrs/protoc-gen-interfaces", "workspace:packages/protoc-gen-interfaces"],\
+          ["@bufbuild/protobuf", "npm:1.3.0"],\
+          ["@bufbuild/protoplugin", "npm:1.3.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
