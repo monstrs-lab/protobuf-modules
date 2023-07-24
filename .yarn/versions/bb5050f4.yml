@@ -1,0 +1,3 @@
+releases:
+  "@monstrs/protoc-gen-abstractions": patch
+  "@monstrs/protoc-gen-interfaces": patch
