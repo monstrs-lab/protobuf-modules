@@ -18,6 +18,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:packages/protobuf-rpc"\
     },\
     {\
+      "name": "@monstrs/protoc-gen-abstractions",\
+      "reference": "workspace:packages/protoc-gen-abstractions"\
+    },\
+    {\
       "name": "@monstrs/protoc-gen-interfaces",\
       "reference": "workspace:packages/protoc-gen-interfaces"\
     }\
@@ -26,6 +30,7 @@ const RAW_RUNTIME_STATE =
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@monstrs/protobuf-rpc", ["workspace:packages/protobuf-rpc"]],\
+    ["@monstrs/protoc-gen-abstractions", ["workspace:packages/protoc-gen-abstractions"]],\
     ["@monstrs/protoc-gen-interfaces", ["workspace:packages/protoc-gen-interfaces"]],\
     ["protobuf-modules", ["workspace:."]]\
   ],\
@@ -1852,6 +1857,17 @@ const RAW_RUNTIME_STATE =
           ["@bufbuild/protobuf", "npm:1.2.0"],\
           ["@bufbuild/protoc-gen-connect-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:0.8.6"],\
           ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@monstrs/protoc-gen-abstractions", [\
+      ["workspace:packages/protoc-gen-abstractions", {\
+        "packageLocation": "./packages/protoc-gen-abstractions/",\
+        "packageDependencies": [\
+          ["@monstrs/protoc-gen-abstractions", "workspace:packages/protoc-gen-abstractions"],\
+          ["@bufbuild/protobuf", "npm:1.3.0"],\
+          ["@bufbuild/protoplugin", "npm:1.3.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
