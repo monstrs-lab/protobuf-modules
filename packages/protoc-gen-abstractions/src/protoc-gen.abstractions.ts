@@ -77,7 +77,7 @@ function generateMessage(schema: Schema, f: GeneratedFile, message: DescMessage)
 
 function generateOneof(_: Schema, f: GeneratedFile, oneof: DescOneof) {
   f.print(makeJsDoc(oneof, '  '))
-  f.print('  ', localName(oneof), ': {')
+  f.print('  abstract readonly ', localName(oneof), ': {')
   for (const field of oneof.fields) {
     if (oneof.fields.indexOf(field) > 0) {
       f.print(`  } | {`)
