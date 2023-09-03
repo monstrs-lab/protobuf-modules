@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@monstrs/tools-runtime", "npm:0.2.15"],\
-          ["@types/node", "npm:18.15.11"],\
+          ["@types/node", "npm:20.5.9"],\
           ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
@@ -1073,132 +1073,97 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@bufbuild/buf", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-npm-1.15.0-00f5de2506/node_modules/@bufbuild/buf/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-npm-1.26.1-f2844a750e/node_modules/@bufbuild/buf/",\
         "packageDependencies": [\
-          ["@bufbuild/buf", "npm:1.15.0"],\
-          ["@bufbuild/buf-darwin-arm64", "npm:1.15.0"],\
-          ["@bufbuild/buf-darwin-x64", "npm:1.15.0"],\
-          ["@bufbuild/buf-linux-aarch64", "npm:1.15.0"],\
-          ["@bufbuild/buf-linux-x64", "npm:1.15.0"],\
-          ["@bufbuild/buf-win32-arm64", "npm:1.15.0"],\
-          ["@bufbuild/buf-win32-x64", "npm:1.15.0"]\
+          ["@bufbuild/buf", "npm:1.26.1"],\
+          ["@bufbuild/buf-darwin-arm64", "npm:1.26.1"],\
+          ["@bufbuild/buf-darwin-x64", "npm:1.26.1"],\
+          ["@bufbuild/buf-linux-aarch64", "npm:1.26.1"],\
+          ["@bufbuild/buf-linux-x64", "npm:1.26.1"],\
+          ["@bufbuild/buf-win32-arm64", "npm:1.26.1"],\
+          ["@bufbuild/buf-win32-x64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/buf-darwin-arm64", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-darwin-arm64-npm-1.15.0-6aaa9b48a6/node_modules/@bufbuild/buf-darwin-arm64/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-darwin-arm64-npm-1.26.1-2ce224900f/node_modules/@bufbuild/buf-darwin-arm64/",\
         "packageDependencies": [\
-          ["@bufbuild/buf-darwin-arm64", "npm:1.15.0"]\
+          ["@bufbuild/buf-darwin-arm64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/buf-darwin-x64", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-darwin-x64-npm-1.15.0-6c89c979c3/node_modules/@bufbuild/buf-darwin-x64/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-darwin-x64-npm-1.26.1-312b426069/node_modules/@bufbuild/buf-darwin-x64/",\
         "packageDependencies": [\
-          ["@bufbuild/buf-darwin-x64", "npm:1.15.0"]\
+          ["@bufbuild/buf-darwin-x64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/buf-linux-aarch64", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-linux-aarch64-npm-1.15.0-92c737e3da/node_modules/@bufbuild/buf-linux-aarch64/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-linux-aarch64-npm-1.26.1-68bbf4561b/node_modules/@bufbuild/buf-linux-aarch64/",\
         "packageDependencies": [\
-          ["@bufbuild/buf-linux-aarch64", "npm:1.15.0"]\
+          ["@bufbuild/buf-linux-aarch64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/buf-linux-x64", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-linux-x64-npm-1.15.0-5346cd4651/node_modules/@bufbuild/buf-linux-x64/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-linux-x64-npm-1.26.1-9474e90714/node_modules/@bufbuild/buf-linux-x64/",\
         "packageDependencies": [\
-          ["@bufbuild/buf-linux-x64", "npm:1.15.0"]\
+          ["@bufbuild/buf-linux-x64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/buf-win32-arm64", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-win32-arm64-npm-1.15.0-5968599dcf/node_modules/@bufbuild/buf-win32-arm64/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-win32-arm64-npm-1.26.1-5785ca6c85/node_modules/@bufbuild/buf-win32-arm64/",\
         "packageDependencies": [\
-          ["@bufbuild/buf-win32-arm64", "npm:1.15.0"]\
+          ["@bufbuild/buf-win32-arm64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/buf-win32-x64", [\
-      ["npm:1.15.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-win32-x64-npm-1.15.0-2d5b29ce13/node_modules/@bufbuild/buf-win32-x64/",\
+      ["npm:1.26.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-buf-win32-x64-npm-1.26.1-a10fd37b5b/node_modules/@bufbuild/buf-win32-x64/",\
         "packageDependencies": [\
-          ["@bufbuild/buf-win32-x64", "npm:1.15.0"]\
+          ["@bufbuild/buf-win32-x64", "npm:1.26.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/protobuf", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-protobuf-npm-1.2.0-7f17a4361b-c2849f84bd.zip/node_modules/@bufbuild/protobuf/",\
+      ["npm:1.3.1", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-protobuf-npm-1.3.1-dc09ed1943-a3bcdf15ac.zip/node_modules/@bufbuild/protobuf/",\
         "packageDependencies": [\
-          ["@bufbuild/protobuf", "npm:1.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:1.3.0", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-protobuf-npm-1.3.0-da600c7f9c-c1a5fdec23.zip/node_modules/@bufbuild/protobuf/",\
-        "packageDependencies": [\
-          ["@bufbuild/protobuf", "npm:1.3.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@bufbuild/protoc-gen-connect-es", [\
-      ["npm:0.8.6", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-connect-es-virtual-67b79e9987/node_modules/@bufbuild/protoc-gen-connect-es/",\
-        "packageDependencies": [\
-          ["@bufbuild/protoc-gen-connect-es", "npm:0.8.6"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:0.8.6", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-connect-es-virtual-67b79e9987/node_modules/@bufbuild/protoc-gen-connect-es/",\
-        "packageDependencies": [\
-          ["@bufbuild/protoc-gen-connect-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:0.8.6"],\
-          ["@bufbuild/connect", null],\
-          ["@bufbuild/protobuf", "npm:1.2.0"],\
-          ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.2.0"],\
-          ["@bufbuild/protoplugin", "npm:1.2.0"],\
-          ["@types/bufbuild__connect", null],\
-          ["@types/bufbuild__protoc-gen-es", null]\
-        ],\
-        "packagePeers": [\
-          "@bufbuild/connect",\
-          "@bufbuild/protoc-gen-es",\
-          "@types/bufbuild__connect",\
-          "@types/bufbuild__protoc-gen-es"\
+          ["@bufbuild/protobuf", "npm:1.3.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@bufbuild/protoc-gen-es", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-es-virtual-545e5f7579/node_modules/@bufbuild/protoc-gen-es/",\
+      ["npm:1.3.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-es-virtual-38b2b30014/node_modules/@bufbuild/protoc-gen-es/",\
         "packageDependencies": [\
-          ["@bufbuild/protoc-gen-es", "npm:1.2.0"]\
+          ["@bufbuild/protoc-gen-es", "npm:1.3.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.2.0", {\
-        "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-es-virtual-545e5f7579/node_modules/@bufbuild/protoc-gen-es/",\
+      ["virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.3.1", {\
+        "packageLocation": "./.yarn/unplugged/@bufbuild-protoc-gen-es-virtual-38b2b30014/node_modules/@bufbuild/protoc-gen-es/",\
         "packageDependencies": [\
-          ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.2.0"],\
-          ["@bufbuild/protobuf", "npm:1.2.0"],\
-          ["@bufbuild/protoplugin", "npm:1.2.0"],\
+          ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.3.1"],\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
+          ["@bufbuild/protoplugin", "npm:1.3.1"],\
           ["@types/bufbuild__protobuf", null]\
         ],\
         "packagePeers": [\
@@ -1209,21 +1174,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@bufbuild/protoplugin", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-protoplugin-npm-1.2.0-20a2eedbd9-551d7c829d.zip/node_modules/@bufbuild/protoplugin/",\
+      ["npm:1.3.1", {\
+        "packageLocation": "./.yarn/cache/@bufbuild-protoplugin-npm-1.3.1-4559c99c74-6358c72c4f.zip/node_modules/@bufbuild/protoplugin/",\
         "packageDependencies": [\
-          ["@bufbuild/protoplugin", "npm:1.2.0"],\
-          ["@bufbuild/protobuf", "npm:1.2.0"],\
-          ["@typescript/vfs", "npm:1.4.0"],\
-          ["typescript", "patch:typescript@npm%3A4.5.2#optional!builtin<compat/typescript>::version=4.5.2&hash=bcec9a"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:1.3.0", {\
-        "packageLocation": "./.yarn/cache/@bufbuild-protoplugin-npm-1.3.0-80665a77c5-cf5b4fe12b.zip/node_modules/@bufbuild/protoplugin/",\
-        "packageDependencies": [\
-          ["@bufbuild/protoplugin", "npm:1.3.0"],\
-          ["@bufbuild/protobuf", "npm:1.3.0"],\
+          ["@bufbuild/protoplugin", "npm:1.3.1"],\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
           ["@typescript/vfs", "npm:1.4.0"],\
           ["typescript", "patch:typescript@npm%3A4.5.2#optional!builtin<compat/typescript>::version=4.5.2&hash=bcec9a"]\
         ],\
@@ -1853,10 +1808,9 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/protobuf-rpc/",\
         "packageDependencies": [\
           ["@monstrs/protobuf-rpc", "workspace:packages/protobuf-rpc"],\
-          ["@bufbuild/buf", "npm:1.15.0"],\
-          ["@bufbuild/protobuf", "npm:1.2.0"],\
-          ["@bufbuild/protoc-gen-connect-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:0.8.6"],\
-          ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.2.0"]\
+          ["@bufbuild/buf", "npm:1.26.1"],\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
+          ["@bufbuild/protoc-gen-es", "virtual:a70fdf0c143d8a00cbb62645cb98687fa0510c15162ccdbf640d8008924480247e6d63bbba84729fd05ae969cc40dab578c261e887d6cc758a27b000d6e42efa#npm:1.3.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1866,8 +1820,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/protoc-gen-abstractions/",\
         "packageDependencies": [\
           ["@monstrs/protoc-gen-abstractions", "workspace:packages/protoc-gen-abstractions"],\
-          ["@bufbuild/protobuf", "npm:1.3.0"],\
-          ["@bufbuild/protoplugin", "npm:1.3.0"]\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
+          ["@bufbuild/protoplugin", "npm:1.3.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1877,8 +1831,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/protoc-gen-interfaces/",\
         "packageDependencies": [\
           ["@monstrs/protoc-gen-interfaces", "workspace:packages/protoc-gen-interfaces"],\
-          ["@bufbuild/protobuf", "npm:1.3.0"],\
-          ["@bufbuild/protoplugin", "npm:1.3.0"]\
+          ["@bufbuild/protobuf", "npm:1.3.1"],\
+          ["@bufbuild/protoplugin", "npm:1.3.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -2374,6 +2328,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-node-npm-18.15.11-fd8ceaaffd-670deb1a9d.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:18.15.11"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:20.5.9", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.5.9-0b27ddedcc-a071a19019.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.5.9"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7172,7 +7133,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["protobuf-modules", "workspace:."],\
           ["@monstrs/tools-runtime", "npm:0.2.15"],\
-          ["@types/node", "npm:18.15.11"],\
+          ["@types/node", "npm:20.5.9"],\
           ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
