@@ -1,4 +1,0 @@
-releases:
-  "@monstrs/protobuf-rpc": patch
-  "@monstrs/protoc-gen-abstractions": patch
-  "@monstrs/protoc-gen-interfaces": patch
