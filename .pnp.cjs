@@ -14,6 +14,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
+      "name": "@monstrs/descriptor-to-proto",\
+      "reference": "workspace:packages/descriptor-to-proto"\
+    },\
+    {\
       "name": "@monstrs/protobuf-rpc",\
       "reference": "workspace:packages/protobuf-rpc"\
     },\
@@ -29,6 +33,7 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
+    ["@monstrs/descriptor-to-proto", ["workspace:packages/descriptor-to-proto"]],\
     ["@monstrs/protobuf-rpc", ["workspace:packages/protobuf-rpc"]],\
     ["@monstrs/protoc-gen-abstractions", ["workspace:packages/protoc-gen-abstractions"]],\
     ["@monstrs/protoc-gen-interfaces", ["workspace:packages/protoc-gen-interfaces"]],\
@@ -1793,6 +1798,19 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@monstrs/descriptor-to-proto", [\
+      ["workspace:packages/descriptor-to-proto", {\
+        "packageLocation": "./packages/descriptor-to-proto/",\
+        "packageDependencies": [\
+          ["@monstrs/descriptor-to-proto", "workspace:packages/descriptor-to-proto"],\
+          ["camelcase-keys", "npm:9.1.2"],\
+          ["commander", "npm:11.1.0"],\
+          ["fast-glob", "npm:3.3.1"],\
+          ["protobufjs", "npm:7.2.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
     ["@monstrs/jest-resolver", [\
       ["npm:0.3.3", {\
         "packageLocation": "./.yarn/cache/@monstrs-jest-resolver-npm-0.3.3-462d504090-67979c5237.zip/node_modules/@monstrs/jest-resolver/",\
@@ -1908,6 +1926,98 @@ const RAW_RUNTIME_STATE =
           ["open", "npm:9.1.0"],\
           ["picocolors", "npm:1.0.0"],\
           ["tslib", "npm:2.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/aspromise", [\
+      ["npm:1.1.2", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-aspromise-npm-1.1.2-71d00b938f-a83343a468.zip/node_modules/@protobufjs/aspromise/",\
+        "packageDependencies": [\
+          ["@protobufjs/aspromise", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/base64", [\
+      ["npm:1.1.2", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-base64-npm-1.1.2-cd8ca6814a-eec925e681.zip/node_modules/@protobufjs/base64/",\
+        "packageDependencies": [\
+          ["@protobufjs/base64", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/codegen", [\
+      ["npm:2.0.4", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-codegen-npm-2.0.4-36e188bbe6-26ae337c56.zip/node_modules/@protobufjs/codegen/",\
+        "packageDependencies": [\
+          ["@protobufjs/codegen", "npm:2.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/eventemitter", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-eventemitter-npm-1.1.0-029cc7d431-1eb0a75180.zip/node_modules/@protobufjs/eventemitter/",\
+        "packageDependencies": [\
+          ["@protobufjs/eventemitter", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/fetch", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-fetch-npm-1.1.0-ca857b7df4-cda6a3dc2d.zip/node_modules/@protobufjs/fetch/",\
+        "packageDependencies": [\
+          ["@protobufjs/fetch", "npm:1.1.0"],\
+          ["@protobufjs/aspromise", "npm:1.1.2"],\
+          ["@protobufjs/inquire", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/float", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-float-npm-1.0.2-5678f64d08-18f2bdede7.zip/node_modules/@protobufjs/float/",\
+        "packageDependencies": [\
+          ["@protobufjs/float", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/inquire", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-inquire-npm-1.1.0-3c7759e9ce-64372482ef.zip/node_modules/@protobufjs/inquire/",\
+        "packageDependencies": [\
+          ["@protobufjs/inquire", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/path", [\
+      ["npm:1.1.2", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-path-npm-1.1.2-641d08de76-cece0a938e.zip/node_modules/@protobufjs/path/",\
+        "packageDependencies": [\
+          ["@protobufjs/path", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/pool", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-pool-npm-1.1.0-47a76f96a1-eda2718b7f.zip/node_modules/@protobufjs/pool/",\
+        "packageDependencies": [\
+          ["@protobufjs/pool", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@protobufjs/utf8", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "./.yarn/cache/@protobufjs-utf8-npm-1.1.0-02c590807c-a3fe31fe3f.zip/node_modules/@protobufjs/utf8/",\
+        "packageDependencies": [\
+          ["@protobufjs/utf8", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2357,6 +2467,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-node-npm-20.5.9-0b27ddedcc-a071a19019.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.5.9"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:20.8.10", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.8.10-29d985f3e4-caaa3ae929.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.8.10"],\
+          ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3526,6 +3644,26 @@ const RAW_RUNTIME_STATE =
           ["camelcase", "npm:6.2.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:8.0.0", {\
+        "packageLocation": "./.yarn/cache/camelcase-npm-8.0.0-a3fa03dcc3-56c5fe072f.zip/node_modules/camelcase/",\
+        "packageDependencies": [\
+          ["camelcase", "npm:8.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["camelcase-keys", [\
+      ["npm:9.1.2", {\
+        "packageLocation": "./.yarn/cache/camelcase-keys-npm-9.1.2-d278f6854e-be5fa948e7.zip/node_modules/camelcase-keys/",\
+        "packageDependencies": [\
+          ["camelcase-keys", "npm:9.1.2"],\
+          ["camelcase", "npm:8.0.0"],\
+          ["map-obj", "npm:5.0.0"],\
+          ["quick-lru", "npm:6.1.2"],\
+          ["type-fest", "npm:4.6.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["caniuse-lite", [\
@@ -3684,6 +3822,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["commander", [\
+      ["npm:11.1.0", {\
+        "packageLocation": "./.yarn/cache/commander-npm-11.1.0-56e979613c-13cc6ac875.zip/node_modules/commander/",\
+        "packageDependencies": [\
+          ["commander", "npm:11.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:2.20.3", {\
         "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-74c781a524.zip/node_modules/commander/",\
         "packageDependencies": [\
@@ -6792,6 +6937,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["long", [\
+      ["npm:5.2.3", {\
+        "packageLocation": "./.yarn/cache/long-npm-5.2.3-61dddb7586-6a0da658f5.zip/node_modules/long/",\
+        "packageDependencies": [\
+          ["long", "npm:5.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["loose-envify", [\
       ["npm:1.4.0", {\
         "packageLocation": "./.yarn/cache/loose-envify-npm-1.4.0-6307b72ccf-655d110220.zip/node_modules/loose-envify/",\
@@ -6855,6 +7009,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["makeerror", "npm:1.0.12"],\
           ["tmpl", "npm:1.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["map-obj", [\
+      ["npm:5.0.0", {\
+        "packageLocation": "./.yarn/cache/map-obj-npm-5.0.0-71c70b509b-8ae0d8a3ce.zip/node_modules/map-obj/",\
+        "packageDependencies": [\
+          ["map-obj", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7551,6 +7714,27 @@ const RAW_RUNTIME_STATE =
         "linkType": "SOFT"\
       }]\
     ]],\
+    ["protobufjs", [\
+      ["npm:7.2.5", {\
+        "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.2.5-3439c554a5/node_modules/protobufjs/",\
+        "packageDependencies": [\
+          ["protobufjs", "npm:7.2.5"],\
+          ["@protobufjs/aspromise", "npm:1.1.2"],\
+          ["@protobufjs/base64", "npm:1.1.2"],\
+          ["@protobufjs/codegen", "npm:2.0.4"],\
+          ["@protobufjs/eventemitter", "npm:1.1.0"],\
+          ["@protobufjs/fetch", "npm:1.1.0"],\
+          ["@protobufjs/float", "npm:1.0.2"],\
+          ["@protobufjs/inquire", "npm:1.1.0"],\
+          ["@protobufjs/path", "npm:1.1.2"],\
+          ["@protobufjs/pool", "npm:1.1.0"],\
+          ["@protobufjs/utf8", "npm:1.1.0"],\
+          ["@types/node", "npm:20.8.10"],\
+          ["long", "npm:5.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["psl", [\
       ["npm:1.8.0", {\
         "packageLocation": "./.yarn/cache/psl-npm-1.8.0-226099d70e-b5f1956f75.zip/node_modules/psl/",\
@@ -7583,6 +7767,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/qs-npm-6.5.2-dbf9d8386b-dab79026d5.zip/node_modules/qs/",\
         "packageDependencies": [\
           ["qs", "npm:6.5.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["quick-lru", [\
+      ["npm:6.1.2", {\
+        "packageLocation": "./.yarn/cache/quick-lru-npm-6.1.2-1e676e863f-f499f07bd2.zip/node_modules/quick-lru/",\
+        "packageDependencies": [\
+          ["quick-lru", "npm:6.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8690,6 +8883,13 @@ const RAW_RUNTIME_STATE =
           ["type-fest", "npm:0.21.3"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:4.6.0", {\
+        "packageLocation": "./.yarn/cache/type-fest-npm-4.6.0-0f72549fa3-6f34c3cdb9.zip/node_modules/type-fest/",\
+        "packageDependencies": [\
+          ["type-fest", "npm:4.6.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["typed-array-buffer", [\
@@ -8768,6 +8968,15 @@ const RAW_RUNTIME_STATE =
           ["has-bigints", "npm:1.0.2"],\
           ["has-symbols", "npm:1.0.3"],\
           ["which-boxed-primitive", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["undici-types", [\
+      ["npm:5.26.5", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-5.26.5-de4f7c7bb9-bb673d7876.zip/node_modules/undici-types/",\
+        "packageDependencies": [\
+          ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
       }]\
