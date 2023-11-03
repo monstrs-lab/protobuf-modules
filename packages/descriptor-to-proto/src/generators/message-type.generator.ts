@@ -3,7 +3,10 @@ import type { IFieldDescriptorProto } from 'protobufjs/ext/descriptor/index.js'
 
 import { EOL }                        from 'node:os'
 
+import camelcase                      from 'camelcase'
+
 import { AbstractGenerator }          from './abstract.generator.js'
+import { toTypeName }                 from './type-name.utils.js'
 
 export class MessageTypeGenerator extends AbstractGenerator {
   constructor(
@@ -16,7 +19,15 @@ export class MessageTypeGenerator extends AbstractGenerator {
   override render(indent: number = 0): string {
     const records: Array<string> = []
 
-    records.push(this.renderLine(`message ${this.messageType.name} {`, indent))
+    records.push(
+      this.renderLine(
+        `message ${camelcase(this.messageType.name!, {
+          pascalCase: true,
+          preserveConsecutiveUppercase: true,
+        })} {`,
+        indent
+      )
+    )
 
     this.messageType.field?.forEach((field) => {
       records.push(this.renderLine(this.renderMessageField(field), indent + 2))
@@ -58,14 +69,24 @@ export class MessageTypeGenerator extends AbstractGenerator {
         ? field.typeName.replace(`.${this.pkg}`, '')
         : field.typeName
 
-      return typeName.startsWith('.') ? typeName.substring(1) : typeName
+      return toTypeName(typeName.startsWith('.') ? typeName.substring(1) : typeName)
     }
 
     throw new Error(`Unknown type ${field.type}`)
   }
 
+  protected isRepeatedField(field: IFieldDescriptorProto): boolean {
+    return field.type === 11
+  }
+
   protected renderMessageField(field: IFieldDescriptorProto): string {
     const records: Array<string> = []
+
+    if (field.label === 1) {
+      records.push('optional')
+    } else if (field.label === 3) {
+      records.push('repeated')
+    }
 
     records.push(this.renderMessageFieldType(field))
     records.push(field.name!)
