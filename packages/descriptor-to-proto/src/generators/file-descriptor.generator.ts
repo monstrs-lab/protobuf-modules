@@ -1,6 +1,10 @@
 import type { IFileDescriptorProto } from 'protobufjs/ext/descriptor/index.js'
 
 import { EOL }                       from 'node:os'
+import { join }                      from 'node:path'
+
+import { ParseResultType }           from 'parse-domain'
+import { parseDomain }               from 'parse-domain'
 
 import { AbstractGenerator }         from './abstract.generator.js'
 import { EnumTypeGenerator }         from './enum-type.generator.js'
@@ -8,7 +12,10 @@ import { MessageTypeGenerator }      from './message-type.generator.js'
 import { ServiceGenerator }          from './service.generator.js'
 
 export class FileDescriptorGenerator extends AbstractGenerator {
-  constructor(protected readonly fileDescriptor: IFileDescriptorProto) {
+  constructor(
+    protected readonly fileDescriptor: IFileDescriptorProto,
+    protected readonly replace: Record<string, string> = {}
+  ) {
     super()
   }
 
@@ -21,18 +28,12 @@ export class FileDescriptorGenerator extends AbstractGenerator {
     records.push(this.renderPackage())
     records.push('')
 
-    const dependencies: Array<string> = (
-      (this.fileDescriptor.dependency as Array<string>) || []
-    ).filter(
-      (dependency: string) =>
-        ![
-          'github.com/gogo/protobuf/gogoproto/gogo.proto',
-          'google/protobuf/wrappers.proto',
-        ].includes(dependency)
-    )
+    const dependencies: Array<string> = (this.fileDescriptor.dependency as Array<string>) || []
 
     dependencies.forEach((dependency: string) => {
-      records.push(this.renderDependency(dependency))
+      if (!['github.com/gogo/protobuf/gogoproto/gogo.proto'].includes(dependency)) {
+        records.push(this.renderDependency(dependency))
+      }
     })
 
     records.push('')
@@ -60,10 +61,24 @@ export class FileDescriptorGenerator extends AbstractGenerator {
   }
 
   protected renderPackage(): string {
-    return `package ${this.fileDescriptor.package};`
+    const pkg = this.replace[this.fileDescriptor.package!]
+      ? this.replace[this.fileDescriptor.package!]
+      : this.fileDescriptor.package
+
+    return `package ${pkg};`
   }
 
   protected renderDependency(dependency: string): string {
-    return `import "${dependency}";`
+    if (parseDomain(dependency.split('/').at(0)!).type === ParseResultType.Listed) {
+      return `import "${dependency}";`
+    }
+
+    const replacement = this.replace[this.fileDescriptor.package!]
+
+    if (!replacement) {
+      return `import "${dependency}";`
+    }
+
+    return `import "${join(replacement.replaceAll('.', '/'), dependency)}";`
   }
 }

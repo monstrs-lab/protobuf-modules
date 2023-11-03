@@ -4,6 +4,7 @@ import type { IMethodDescriptorProto }  from 'protobufjs/ext/descriptor/index.js
 import { EOL }                          from 'node:os'
 
 import { AbstractGenerator }            from './abstract.generator.js'
+import { toTypeName }                   from './type-name.utils.js'
 
 export class ServiceGenerator extends AbstractGenerator {
   constructor(
@@ -32,7 +33,7 @@ export class ServiceGenerator extends AbstractGenerator {
       ? methodType.replace(`.${this.pkg}`, '')
       : methodType
 
-    return `(${typeName.startsWith('.') ? typeName.substring(1) : typeName})`
+    return `(${toTypeName(typeName.startsWith('.') ? typeName.substring(1) : typeName)})`
   }
 
   protected renderMethod(method: IMethodDescriptorProto, indent = 0): string {

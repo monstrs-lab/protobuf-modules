@@ -12,11 +12,13 @@ import { FileDescriptorGenerator }   from './generators/index.js'
 export interface DescriptorToProtoOptions {
   input: string
   output: string
+  replace: Record<string, string>
 }
 
 export const descriptorToProto = async ({
   input,
   output,
+  replace,
 }: DescriptorToProtoOptions): Promise<void> => {
   const entries = await fg.async(['**/*.json'], { cwd: input })
 
@@ -25,7 +27,7 @@ export const descriptorToProto = async ({
 
     const content = camelcaseKeys(JSON.parse(data), { deep: true }) as IFileDescriptorProto
 
-    const result = new FileDescriptorGenerator(content).render()
+    const result = new FileDescriptorGenerator(content, replace).render()
 
     await writeFile(join(output, entry.replace('.json', '.proto')), result)
   }
