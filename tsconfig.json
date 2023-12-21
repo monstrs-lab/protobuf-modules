@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext", "dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -25,7 +32,11 @@
     "target": "es2021",
     "jsx": "react",
     "outDir": "./dist",
-    "noImplicitOverride": true
+    "noImplicitOverride": true,
+    "skipLibCheck": true
   },
-  "include": ["project.types.d.ts", "packages/**/*"]
+  "include": [
+    "project.types.d.ts",
+    "packages/**/*"
+  ]
 }
