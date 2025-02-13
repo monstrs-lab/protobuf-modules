@@ -27,6 +27,11 @@ export class LogicalError extends Message<LogicalError> {
    */
   message = ''
 
+  /**
+   * @generated from field: map<string, string> metadata = 3;
+   */
+  metadata: { [key: string]: string } = {}
+
   constructor(data?: PartialMessage<LogicalError>) {
     super()
     proto3.util.initPartial(data, this)
@@ -37,6 +42,13 @@ export class LogicalError extends Message<LogicalError> {
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: 'id', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
     { no: 2, name: 'message', kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    {
+      no: 3,
+      name: 'metadata',
+      kind: 'map',
+      K: 9 /* ScalarType.STRING */,
+      V: { kind: 'scalar', T: 9 /* ScalarType.STRING */ },
+    },
   ])
 
   static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LogicalError {
